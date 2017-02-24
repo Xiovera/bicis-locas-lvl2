@@ -16,34 +16,34 @@
   <body>
     <section class="form-container">
       <div class="container-fluid">
-        <form class="form-signup" onsubmit="validateForm()">
+        <form class="form-signup" onsubmit="validateForm()" novalidate>
           <h2 id="form-signup-heading">
             Bicis Locas
           </h2>
-          <div class="name-container input-box" id="contenedorName">
+          <div class="name-container input-box">
             <label for="name" class="sr-only">Nombre</label>
             <input type="text" id="name" class="form-control"
             placeholder="Ingrese su nombre">
           </div>
-          <div class="lastname-container input-box" id="contenedorLastName">
+          <div class="lastname-container input-box">
             <label for="lastname" class="sr-only">Apellido</label>
             <input type="text" id="lastname" class="form-control"
             placeholder="Ingrese su apellido">
           </div>
-          <div class="email-container input-box" id="contenedorEmail">
-            <label for="inputEmail" class="sr-only">
+          <div class="email-container input-box">
+            <label for="input-email" class="sr-only">
               Correo Electrónico
             </label>
-            <input type="email" id="input-email" class="form-control" placeholder="Ingrese su correo electrónico" autofocus="" >
+            <input type="email" id="input-email" class="form-control" placeholder="Ingrese su correo electrónico" autofocus="">
           </div>
-          <div class="form-group input-box" id="contenedorPassword">
-            <label for="inputPassword" class="sr-only">
+          <div class="form-group input-box">
+            <label for="input-password" class="sr-only">
               Contraseña
             </label>
             <input type="password" id="input-password" class="form-control" placeholder="Ingrese su contraseña">
           </div>
-          <div class="form-group input-box" id="contenedorBici">
-            <select class="form-control" id="bici">
+          <div class="form-group input-box">
+            <select id="bici" class="form-control">
               <option value="0">Selecciona tu tipo de bici</option>
               <option value="1">Urbana</option>
               <option value="2">Treking</option>
@@ -65,9 +65,8 @@
         </form>
       </div>  
     </section>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-    <script type='text/javascript' src='js/my-jquery.js'></script>
+    <!-- /container -->
+    <script type='text/javascript' src='js/main.js'></script>
     <script type='text/javascript' src='js/donottouchthisfile.js'></script>
   </body>
 </html>
